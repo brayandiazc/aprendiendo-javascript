@@ -1,0 +1,11 @@
+{
+  // Configuración de markdownlint para el contenido del curso.
+  // Relajamos algunas reglas que no aportan en contenido educativo.
+  "default": true,
+  "MD013": false, // longitud de línea: el contenido tiene prosa larga
+  "MD033": false, // HTML inline: usado puntualmente (emojis, comentarios)
+  "MD041": false, // primera línea como encabezado: no siempre aplica
+  "MD024": { "siblings_only": true }, // permite encabezados repetidos en distintas secciones
+  "MD029": { "style": "ordered" },
+  "MD060": false // alineación exacta de pipes en tablas: cosmética y costosa con acentos/emojis
+}

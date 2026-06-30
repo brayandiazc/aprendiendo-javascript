@@ -73,7 +73,6 @@ En el tercer ejemplo, se define una función que recibe un número y devuelve su
 - No pueden ser usadas como constructores (no tienen un objeto `prototype`).
 - No tienen un `arguments` propio, por lo que si se desea acceder a los argumentos de la función, se deben usar argumentos predeterminados o rest parameters.
 
-
 ## Buenas Prácticas
 
 - Utilizar arrow functions en lugar de funciones anónimas en callbacks. Las arrow functions son más cortas, legibles y evitan el uso de la palabra clave `this`.

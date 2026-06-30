@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentación del curso
+    url: https://github.com/brayandiazc/aprendiendo-javascript#readme
+    about: Revisa el README y los módulos antes de abrir un issue.
+  - name: 💬 Pregunta general
+    url: https://github.com/brayandiazc/aprendiendo-javascript/discussions
+    about: Para dudas abiertas usa Discusiones (si están habilitadas).

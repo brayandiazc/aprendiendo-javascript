@@ -48,7 +48,6 @@ if (edad >= 18) {
 }
 ```
 
-
 ### Ejercicio 4
 
 Crea una variable llamada `edad` y asígnale el valor `18`. Crea una condicional que muestre un mensaje de alerta si la edad es mayor o igual a 18, otro mensaje de alerta si la edad es menor a 18, y otro mensaje de alerta si la edad es igual a 18. Utiliza el operador ternario.

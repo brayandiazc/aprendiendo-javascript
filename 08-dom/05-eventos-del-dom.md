@@ -1,4 +1,4 @@
-# Eventos del dom
+# Eventos del DOM
 
 Los eventos del DOM son acciones o sucesos que ocurren en los elementos del documento HTML y a los cuales se puede responder mediante la ejecución de código JavaScript. Los eventos permiten interactuar con los usuarios y capturar sus acciones, como hacer clic en un elemento, mover el mouse, escribir en un campo de texto, entre otros.
 
