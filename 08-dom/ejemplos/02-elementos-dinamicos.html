@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM · Elementos dinámicos</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; }
+      li { cursor: pointer; }
+      li:hover { text-decoration: line-through; color: #999; }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de tareas</h1>
+    <form id="formulario">
+      <input id="entrada" type="text" placeholder="Escribe una tarea" required />
+      <button type="submit">Agregar</button>
+    </form>
+    <ul id="lista"></ul>
+
+    <script>
+      const formulario = document.getElementById("formulario");
+      const entrada = document.getElementById("entrada");
+      const lista = document.getElementById("lista");
+
+      // Al enviar el formulario, creamos un nuevo <li> y lo agregamos a la lista.
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault(); // evita que la página se recargue
+
+        const texto = entrada.value.trim();
+        if (texto === "") return;
+
+        const item = document.createElement("li");
+        item.textContent = texto;
+
+        // Al hacer clic en una tarea, se elimina del DOM.
+        item.addEventListener("click", () => item.remove());
+
+        lista.appendChild(item);
+        entrada.value = "";
+        entrada.focus();
+      });
+    </script>
+  </body>
+</html>

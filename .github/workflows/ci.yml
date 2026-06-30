@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: Markdown lint y enlaces
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+
+      - name: Revisar enlaces
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--no-progress --verbose './**/*.md'"
+          fail: true
+
+  ejemplos:
+    name: Sintaxis de ejemplos JS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Verificar sintaxis de los .js
+        run: |
+          shopt -s globstar nullglob
+          fail=0
+          for f in **/*.js; do
+            node --check "$f" || fail=1
+          done
+          exit $fail

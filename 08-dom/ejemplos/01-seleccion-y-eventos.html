@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM · Selección y eventos</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; }
+      #contador { font-size: 2rem; font-weight: bold; }
+      button { font-size: 1rem; padding: 0.5rem 1rem; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h1>Selección y eventos</h1>
+    <p>Has hecho clic <span id="contador">0</span> veces.</p>
+    <button id="boton">Súmale uno</button>
+
+    <script>
+      // 1. Seleccionamos los elementos del DOM por su id.
+      const boton = document.getElementById("boton");
+      const contador = document.getElementById("contador");
+
+      let cuenta = 0;
+
+      // 2. Respondemos al evento "click" actualizando el texto del elemento.
+      boton.addEventListener("click", () => {
+        cuenta += 1;
+        contador.textContent = cuenta;
+        console.log(`Clics: ${cuenta}`);
+      });
+    </script>
+  </body>
+</html>

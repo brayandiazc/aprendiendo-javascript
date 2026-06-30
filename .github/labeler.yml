@@ -1,0 +1,40 @@
+# Auto-etiquetado de Pull Requests según los archivos modificados.
+# Requiere el workflow actions/labeler. Ajusta a la estructura real del curso.
+
+contenido:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "0*/**/*.md"
+
+ejemplos:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "**/*.js"
+      - "**/*.html"
+
+proyectos:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "proyectos/**/*"
+
+documentacion:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "docs/**/*"
+      - "*.md"
+      - ".github/ISSUE_TEMPLATE/**/*"
+      - ".github/PULL_REQUEST_TEMPLATE.md"
+
+ia:
+  - changed-files:
+    - any-glob-to-any-file:
+      - ".claude/**/*"
+      - "AGENTS.md"
+      - "CLAUDE.md"
+
+ci-cd:
+  - changed-files:
+    - any-glob-to-any-file:
+      - ".github/workflows/**/*"
+      - ".github/dependabot.yml"
+      - ".github/labeler.yml"

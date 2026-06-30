@@ -1,0 +1,33 @@
+# ==============================================================================
+# .gitignore — Aprendiendo JavaScript (proyecto de contenido educativo)
+# ==============================================================================
+
+# ── Dependencias (si algún ejemplo/proyecto usa npm) ───────────────────────
+node_modules/
+
+# ── Artefactos y temporales ────────────────────────────────────────────────
+*.log
+.cache/
+tmp/
+coverage/
+
+# ── Sistema operativo ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editores / IDE ─────────────────────────────────────────────────────────
+.idea/
+*.swp
+*~
+# Nota: .vscode/ SÍ se versiona (contiene settings compartidos del proyecto).
+
+# ── Agentes de IA (solo personal/local) ────────────────────────────────────
+# La configuración compartida de IA (AGENTS.md, CLAUDE.md, .claude/agents,
+# .claude/skills, .claude/settings.json) SÍ se versiona. Solo se ignoran los
+# ajustes personales/locales.
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/*.lock
+
+# ── Configuración local de MCP ─────────────────────────────────────────────
+.mcp.json

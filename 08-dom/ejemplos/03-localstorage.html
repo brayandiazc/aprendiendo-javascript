@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM · localStorage</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; }
+      textarea { width: 100%; height: 8rem; font-size: 1rem; }
+      small { color: #666; }
+    </style>
+  </head>
+  <body>
+    <h1>Nota persistente</h1>
+    <p>Escribe algo, recarga la página y verás que tu nota sigue ahí.</p>
+    <textarea id="nota" placeholder="Escribe tu nota…"></textarea>
+    <p><small id="estado"></small></p>
+
+    <script>
+      const CLAVE = "mi-nota";
+      const nota = document.getElementById("nota");
+      const estado = document.getElementById("estado");
+
+      // Al cargar la página, recuperamos lo guardado (si existe).
+      nota.value = localStorage.getItem(CLAVE) || "";
+
+      // Cada vez que se escribe, guardamos el contenido.
+      nota.addEventListener("input", () => {
+        localStorage.setItem(CLAVE, nota.value);
+        estado.textContent = "Guardado automáticamente ✓";
+      });
+    </script>
+  </body>
+</html>
