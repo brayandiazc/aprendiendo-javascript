@@ -7,6 +7,19 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-06-30
+
+### Added
+
+- Script `.github/scripts/format-markdown.sh` para formatear Markdown y ejemplos con
+  Prettier (`--write`/`--check`), más `.prettierrc` (`proseWrap: preserve`) y `.prettierignore`.
+- Script `.github/scripts/setup-labels.sh` para crear/actualizar las labels del repo con `gh`.
+
+### Fixed
+
+- CI: el chequeo de enlaces (lychee) fallaba por `_sidebar.md` (enlaces raíz-relativos que
+  necesita docsify) y por la URL de GitHub Pages; ahora se excluyen vía `lychee.toml`.
+
 ## [0.3.0] - 2026-06-30
 
 ### Added
@@ -70,7 +83,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 <!--
 Enlaces de comparación entre versiones (ajusta a tu repositorio):
-[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/brayandiazc/aprendiendo-javascript/releases/tag/v0.1.0
