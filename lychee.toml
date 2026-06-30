@@ -1,0 +1,9 @@
+# Configuración de lychee (verificación de enlaces en CI).
+
+# No revisar _sidebar.md: usa enlaces raíz-relativos (/modulo/...) que necesita
+# docsify para la versión web, pero que lychee no resuelve como rutas locales.
+exclude_path = ["_sidebar.md"]
+
+# No revisar la propia URL de GitHub Pages: es un chequeo circular y puede dar 404
+# de forma intermitente mientras el sitio se redesplega.
+exclude = ["brayandiazc\\.github\\.io"]
