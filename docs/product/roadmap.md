@@ -21,6 +21,7 @@ Módulos publicados:
 | 10 · Fetch y APIs            | ✅ Completo (APIs, JSON, fetch, POST) |
 | 11 · Manejo de errores       | ✅ Completo (try/catch, throw, errores async) |
 | 12 · Módulos ES              | ✅ Completo (export/import, default, dinámico) |
+| 13 · String, Number y fechas | ✅ Completo (métodos de string, Math, Date) |
 | Proyectos · Conversor de monedas | ✅ Completo |
 
 ## Correcciones (completadas en v0.2.0)
@@ -39,7 +40,7 @@ Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 - [x] **Fetch y APIs** — consumir datos con `fetch`, JSON, manejo de respuestas. *(módulo 10)*
 - [x] **Manejo de errores** — `try`/`catch`/`finally`, `throw`, errores en asincronía. *(módulo 11)*
 - [x] **Módulos ES** — `import`/`export`, organización de código. *(módulo 12)*
-- [ ] **Métodos avanzados de String y Number**, fechas (`Date`).
+- [x] **Métodos avanzados de String y Number**, fechas (`Date`). *(módulo 13)*
 - [ ] **Proyectos nuevos** — al menos uno que use DOM + asincronía (p. ej. consumir una API pública).
 
 ## Ideas a evaluar

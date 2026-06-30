@@ -115,7 +115,12 @@ anterior, combina teoría con ejemplos y cierra con ejercicios para practicar.
     1. [¿Qué son los módulos?](./12-modulos-es/01-que-son-los-modulos.md)
     2. [export e import](./12-modulos-es/02-export-e-import.md)
     3. [Ejercicios](./12-modulos-es/03-ejercicios.md)
-13. **Proyectos**
+13. **String, Number y fechas**
+    1. [Métodos de String](./13-strings-numeros-fechas/01-metodos-de-string.md)
+    2. [Números y Math](./13-strings-numeros-fechas/02-numeros-y-math.md)
+    3. [Fechas](./13-strings-numeros-fechas/03-fechas.md)
+    4. [Ejercicios](./13-strings-numeros-fechas/04-ejercicios.md)
+14. **Proyectos**
     1. [Conversor de monedas](./proyectos/conversor-monedas.md)
 
 > ¿Qué viene después? Consulta el [roadmap de contenido](./docs/product/roadmap.md).
@@ -155,7 +160,7 @@ console.log("¡Hola, mundo!"); // => ¡Hola, mundo!
 
 ```text
 .
-├── 01-introduccion … 12-modulos-es/  # Módulos del curso (lecciones .md numeradas)
+├── 01-introduccion … 13-strings-numeros-fechas/  # Módulos del curso (lecciones .md)
 ├── proyectos/                  # Proyectos prácticos
 ├── docs/                       # Cómo se construye y mantiene el curso
 ├── specs/                      # Plantillas para planear contenido nuevo

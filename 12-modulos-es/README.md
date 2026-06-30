@@ -16,4 +16,4 @@ archivos.
 
 ---
 
-[← Manejo de errores](../11-manejo-de-errores/README.md) · [Volver al índice](../README.md)
+[← Manejo de errores](../11-manejo-de-errores/README.md) · [Volver al índice](../README.md) · [String, Number y fechas →](../13-strings-numeros-fechas/README.md)
