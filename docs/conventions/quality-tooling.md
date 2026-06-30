@@ -32,10 +32,20 @@ npx markdown-link-check **/*.md
 
 ## Formato (opcional)
 
-Prettier puede formatear Markdown y JS de ejemplo de forma consistente:
+Hay un script que formatea el Markdown y los ejemplos (`.js`/`.mjs`) con Prettier vía `npx`
+(no necesitas instalar nada, solo Node.js):
 
 ```bash
-npx prettier --write "**/*.{md,js}"
+bash .github/scripts/format-markdown.sh          # formatea (--write)
+bash .github/scripts/format-markdown.sh --check   # solo verifica, no escribe
+```
+
+La configuración está en [`.prettierrc`](../../.prettierrc) (con `proseWrap: preserve`, así
+que **no reescribe** los párrafos existentes) y las exclusiones en
+[`.prettierignore`](../../.prettierignore). También puedes invocar Prettier directamente:
+
+```bash
+npx prettier --write "**/*.{md,js,mjs}"
 ```
 
 ## CI

@@ -24,7 +24,9 @@ jobs:
       - name: Revisar enlaces
         uses: lycheeverse/lychee-action@v2
         with:
-          args: "--no-progress --verbose './**/*.md'"
+          # Las exclusiones (_sidebar.md y la URL de Pages) están en lychee.toml,
+          # que lychee detecta automáticamente en la raíz del repo.
+          args: "--no-progress './**/*.md'"
           fail: true
 
   ejemplos:
