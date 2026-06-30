@@ -7,6 +7,13 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-06-30
+
+### Added
+
+- CI: nuevo job **Ejecutar soluciones** que corre las soluciones de `soluciones/` con Node
+  (no solo verifica sintaxis); la solución de `fetch` es best-effort por depender de la red.
+
 ## [0.3.1] - 2026-06-30
 
 ### Added
@@ -83,7 +90,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 <!--
 Enlaces de comparación entre versiones (ajusta a tu repositorio):
-[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.2...HEAD
+[0.3.2]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.1.0...v0.2.0

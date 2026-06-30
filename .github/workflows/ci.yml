@@ -47,3 +47,36 @@ jobs:
             node --check "$f" || fail=1
           done
           exit $fail
+
+  ejecutar:
+    name: Ejecutar soluciones
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "lts/*"
+
+      # Ejecuta de verdad las soluciones de los ejercicios y falla si alguna rompe.
+      # Estas no dependen de la red, así que son deterministas.
+      - name: Ejecutar soluciones (offline)
+        run: |
+          set -e
+          for f in \
+            soluciones/07-poo.js \
+            soluciones/09-asincronia.js \
+            soluciones/11-manejo-de-errores.js \
+            soluciones/13-strings-numeros-fechas.js \
+            soluciones/12-modulos-es/main.mjs; do
+            echo "▶ $f"
+            node "$f"
+          done
+
+      # La solución de fetch consume una API pública: depende de la red, así que
+      # es best-effort (no bloquea el CI si la API no responde).
+      - name: Ejecutar solución con red (best-effort)
+        continue-on-error: true
+        run: |
+          echo "▶ soluciones/10-fetch-y-apis.js (requiere red)"
+          node soluciones/10-fetch-y-apis.js
