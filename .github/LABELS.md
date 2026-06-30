@@ -26,16 +26,11 @@ Etiquetas usadas en issues y pull requests de este repositorio.
 
 ## Crear las etiquetas
 
-Crea las etiquetas de contenido en GitHub (Settings → Labels) o con la CLI `gh`:
+La forma más simple es ejecutar el script incluido (requiere `gh` autenticado):
 
 ```bash
-gh label create error-contenido --description "Error técnico, ejemplo o errata" --color d73a4a
-gh label create sugerencia      --description "Propuesta de contenido"          --color 0e8a16
-gh label create pregunta        --description "Duda sobre el contenido"         --color d876e3
-gh label create contenido       --description "Cambios en lecciones"            --color 1d76db
-gh label create ejemplos        --description "Código de ejemplo"               --color fbca04
-gh label create proyectos       --description "Cambios en proyectos"            --color 5319e7
-gh label create documentacion   --description "Documentación de proceso"        --color 0075ca
-gh label create ia              --description "Capa de IA"                      --color c5def5
-gh label create ci-cd           --description "CI / tooling"                    --color ededed
+bash .github/scripts/setup-labels.sh
 ```
+
+Crea (o actualiza, con `--force`) todas las labels de este documento. También puedes
+crearlas a mano en GitHub (Settings → Labels) o con `gh label create` una por una.
