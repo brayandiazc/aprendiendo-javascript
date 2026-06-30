@@ -13,4 +13,4 @@ de archivos) sin congelar el programa. Es la base para, más adelante, consumir 
 
 ---
 
-[← DOM y eventos](../08-dom/README.md) · [Volver al índice](../README.md)
+[← DOM y eventos](../08-dom/README.md) · [Volver al índice](../README.md) · [Fetch y APIs →](../10-fetch-y-apis/README.md)

@@ -102,7 +102,11 @@ anterior, combina teoría con ejemplos y cierra con ejercicios para practicar.
    2. [Promesas](./09-asincronia/02-promesas.md)
    3. [async / await](./09-asincronia/03-async-await.md)
    4. [Ejercicios](./09-asincronia/04-ejercicios.md)
-10. **Proyectos**
+10. **Fetch y APIs**
+    1. [APIs y JSON](./10-fetch-y-apis/01-apis-y-json.md)
+    2. [fetch](./10-fetch-y-apis/02-fetch.md)
+    3. [Ejercicios](./10-fetch-y-apis/03-ejercicios.md)
+11. **Proyectos**
     1. [Conversor de monedas](./proyectos/conversor-monedas.md)
 
 > ¿Qué viene después? Consulta el [roadmap de contenido](./docs/product/roadmap.md).
@@ -142,7 +146,7 @@ console.log("¡Hola, mundo!"); // => ¡Hola, mundo!
 
 ```text
 .
-├── 01-introduccion … 09-asincronia/  # Módulos del curso (lecciones .md numeradas)
+├── 01-introduccion … 10-fetch-y-apis/  # Módulos del curso (lecciones .md numeradas)
 ├── proyectos/                  # Proyectos prácticos
 ├── docs/                       # Cómo se construye y mantiene el curso
 ├── specs/                      # Plantillas para planear contenido nuevo
