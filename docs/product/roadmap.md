@@ -20,6 +20,7 @@ Módulos publicados:
 | 09 · Asincronía              | ✅ Completo (callbacks, promesas, async/await) |
 | 10 · Fetch y APIs            | ✅ Completo (APIs, JSON, fetch, POST) |
 | 11 · Manejo de errores       | ✅ Completo (try/catch, throw, errores async) |
+| 12 · Módulos ES              | ✅ Completo (export/import, default, dinámico) |
 | Proyectos · Conversor de monedas | ✅ Completo |
 
 ## Correcciones (completadas en v0.2.0)
@@ -37,7 +38,7 @@ Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 - [x] **Asincronía** — callbacks, Promises, `async`/`await`. *(módulo 09)*
 - [x] **Fetch y APIs** — consumir datos con `fetch`, JSON, manejo de respuestas. *(módulo 10)*
 - [x] **Manejo de errores** — `try`/`catch`/`finally`, `throw`, errores en asincronía. *(módulo 11)*
-- [ ] **Módulos ES** — `import`/`export`, organización de código.
+- [x] **Módulos ES** — `import`/`export`, organización de código. *(módulo 12)*
 - [ ] **Métodos avanzados de String y Number**, fechas (`Date`).
 - [ ] **Proyectos nuevos** — al menos uno que use DOM + asincronía (p. ej. consumir una API pública).
 

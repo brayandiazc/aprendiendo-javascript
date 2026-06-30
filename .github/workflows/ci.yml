@@ -37,11 +37,11 @@ jobs:
         with:
           node-version: "lts/*"
 
-      - name: Verificar sintaxis de los .js
+      - name: Verificar sintaxis de los ejemplos (.js / .mjs)
         run: |
           shopt -s globstar nullglob
           fail=0
-          for f in **/*.js; do
+          for f in **/*.js **/*.mjs; do
             node --check "$f" || fail=1
           done
           exit $fail
