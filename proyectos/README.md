@@ -16,6 +16,15 @@ Una pequeña aplicación que convierte montos entre monedas, construida paso a p
 
 Descripción completa: [conversor-monedas.md](./conversor-monedas.md).
 
+## Buscador de usuarios
+
+Proyecto **integrador**: descarga usuarios de una API pública y los filtra por nombre en
+tiempo real. Combina DOM, `fetch`, asincronía y manejo de errores.
+
+- App: [buscador-usuarios/index.html](./buscador-usuarios/index.html) (ábrelo en el navegador).
+- Lógica comentada: [buscador-usuarios/app.js](./buscador-usuarios/app.js).
+- Descripción completa: [buscador-usuarios.md](./buscador-usuarios.md).
+
 ---
 
 [← DOM y eventos](../08-dom/README.md) · [Volver al índice](../README.md)

@@ -21,4 +21,4 @@ manipular atributos y guardar datos en el navegador.
 
 ---
 
-[← POO](../07-poo/README.md) · [Volver al índice](../README.md) · [Proyectos →](../proyectos/README.md)
+[← POO](../07-poo/README.md) · [Volver al índice](../README.md) · [Asincronía →](../09-asincronia/README.md)

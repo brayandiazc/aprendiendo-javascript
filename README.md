@@ -8,6 +8,9 @@ explicaciones claras, ejemplos prácticos y ejercicios al final de cada módulo.
 ![Nivel](https://img.shields.io/badge/nivel-principiante-orange)
 ![Hecho con](https://img.shields.io/badge/hecho%20con-Markdown%20%2B%20JavaScript-yellow)
 
+> 🌐 **Versión web navegable**: <https://brayandiazc.github.io/aprendiendo-javascript/>
+> (también puedes leer todo aquí mismo en GitHub).
+
 ## Tabla de contenidos
 
 - [Descripción](#descripción)
@@ -97,8 +100,32 @@ anterior, combina teoría con ejemplos y cierra con ejercicios para practicar.
    8. [localStorage](./08-dom/08-localstorage.md)
    9. [Elementos dinámicos](./08-dom/09-elementos-dinamicos.md)
    10. [Ejercicios](./08-dom/10-ejercicios.md)
-9. **Proyectos**
-   1. [Conversor de monedas](./proyectos/conversor-monedas.md)
+9. **Asincronía**
+   1. [Callbacks y código asíncrono](./09-asincronia/01-callbacks.md)
+   2. [Promesas](./09-asincronia/02-promesas.md)
+   3. [async / await](./09-asincronia/03-async-await.md)
+   4. [Ejercicios](./09-asincronia/04-ejercicios.md)
+10. **Fetch y APIs**
+    1. [APIs y JSON](./10-fetch-y-apis/01-apis-y-json.md)
+    2. [fetch](./10-fetch-y-apis/02-fetch.md)
+    3. [Ejercicios](./10-fetch-y-apis/03-ejercicios.md)
+11. **Manejo de errores**
+    1. [try / catch / finally](./11-manejo-de-errores/01-try-catch.md)
+    2. [Lanzar y crear errores](./11-manejo-de-errores/02-lanzar-y-crear-errores.md)
+    3. [Errores en código asíncrono](./11-manejo-de-errores/03-errores-en-asincronia.md)
+    4. [Ejercicios](./11-manejo-de-errores/04-ejercicios.md)
+12. **Módulos ES**
+    1. [¿Qué son los módulos?](./12-modulos-es/01-que-son-los-modulos.md)
+    2. [export e import](./12-modulos-es/02-export-e-import.md)
+    3. [Ejercicios](./12-modulos-es/03-ejercicios.md)
+13. **String, Number y fechas**
+    1. [Métodos de String](./13-strings-numeros-fechas/01-metodos-de-string.md)
+    2. [Números y Math](./13-strings-numeros-fechas/02-numeros-y-math.md)
+    3. [Fechas](./13-strings-numeros-fechas/03-fechas.md)
+    4. [Ejercicios](./13-strings-numeros-fechas/04-ejercicios.md)
+14. **Proyectos**
+    1. [Conversor de monedas](./proyectos/conversor-monedas.md)
+    2. [Buscador de usuarios (API)](./proyectos/buscador-usuarios.md)
 
 > ¿Qué viene después? Consulta el [roadmap de contenido](./docs/product/roadmap.md).
 
@@ -137,10 +164,12 @@ console.log("¡Hola, mundo!"); // => ¡Hola, mundo!
 
 ```text
 .
-├── 01-introduccion … 08-dom/   # Módulos del curso (lecciones .md numeradas)
+├── 01-introduccion … 13-strings-numeros-fechas/  # Módulos del curso (lecciones .md)
 ├── proyectos/                  # Proyectos prácticos
+├── soluciones/                 # Soluciones ejecutables de los ejercicios
 ├── docs/                       # Cómo se construye y mantiene el curso
 ├── specs/                      # Plantillas para planear contenido nuevo
+├── index.html · _sidebar.md    # Versión web navegable (docsify + GitHub Pages)
 └── .claude/                    # Subagentes y skills de IA del proyecto
 ```
 

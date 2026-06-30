@@ -7,6 +7,27 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-06-30
+
+### Added
+
+- Módulo **09 · Asincronía**: lecciones de callbacks, promesas y `async`/`await`, con
+  ejercicios y ejemplos verificados con Node.
+- Módulo **10 · Fetch y APIs**: APIs/JSON y `fetch` (GET, manejo de errores con
+  `response.ok`, POST), con ejercicios verificados contra una API pública real.
+- Módulo **11 · Manejo de errores**: `try`/`catch`/`finally`, `throw` y errores propios, y
+  manejo de errores en código asíncrono, con ejercicios verificados con Node.
+- Módulo **12 · Módulos ES**: `export`/`import` (con nombre, por defecto, `as`, `* as`,
+  importación dinámica), con archivos `.mjs` de ejemplo ejecutables y ejercicios.
+- Módulo **13 · String, Number y fechas**: métodos de cadenas, números/`Math` y `Date`, con
+  ejercicios verificados con Node.
+- Proyecto **Buscador de usuarios**: app que descarga usuarios de una API pública y los
+  filtra por nombre, integrando DOM, `fetch` y manejo de errores.
+- Carpeta [`soluciones/`](soluciones/README.md): soluciones **ejecutables** de los ejercicios
+  de los módulos 07, 09, 10, 11, 12 y 13.
+- **Versión web navegable** del curso con docsify + GitHub Pages (`index.html`, `_sidebar.md`).
+- CI: la verificación de sintaxis de ejemplos ahora cubre también archivos `.mjs`.
+
 ## [0.2.0] - 2026-06-30
 
 ### Added
@@ -49,7 +70,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 <!--
 Enlaces de comparación entre versiones (ajusta a tu repositorio):
-[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/brayandiazc/aprendiendo-javascript/releases/tag/v0.1.0
 -->
