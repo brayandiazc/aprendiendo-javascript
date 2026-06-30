@@ -250,7 +250,6 @@ En este ejemplo, el método `some()` llama a la función especificada para cada 
 
 En conclusión, los métodos `map()`, `filter()`, `find()`, `reduce()`, `every()`, `some()` son muy útiles para iterar un arreglo y realizar operaciones sobre sus elementos. Si bien no son los únicos métodos que nos permiten iterar un arreglo, son los métodos más utilizados.
 
-
 ## Buenas prácticas
 
 - Utilizar métodos de array como `forEach()`, `map()`, `filter()`, `reduce()`, etc. en lugar de bucles `for`. Estos métodos son más legibles y menos propensos a errores.
