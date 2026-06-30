@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aprendiendo JavaScript</title>
+    <meta name="description" content="Guía completa y amigable para aprender JavaScript desde cero y en español." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <style>
+      :root { --theme-color: #f0db4f; }
+      .app-name-link img, .sidebar .app-name { color: #323330; }
+    </style>
+  </head>
+  <body>
+    <div id="app">Cargando…</div>
+    <script>
+      window.$docsify = {
+        name: "Aprendiendo JavaScript",
+        repo: "https://github.com/brayandiazc/aprendiendo-javascript",
+        homepage: "README.md",
+        loadSidebar: true,
+        relativePath: true,
+        // Usa siempre el mismo _sidebar.md, esté en la carpeta que esté.
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+        },
+        subMaxLevel: 2,
+        auto2top: true,
+        search: {
+          placeholder: "Buscar…",
+          noData: "Sin resultados.",
+          depth: 3,
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  </body>
+</html>
