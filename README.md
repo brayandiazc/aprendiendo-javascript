@@ -97,8 +97,13 @@ anterior, combina teoría con ejemplos y cierra con ejercicios para practicar.
    8. [localStorage](./08-dom/08-localstorage.md)
    9. [Elementos dinámicos](./08-dom/09-elementos-dinamicos.md)
    10. [Ejercicios](./08-dom/10-ejercicios.md)
-9. **Proyectos**
-   1. [Conversor de monedas](./proyectos/conversor-monedas.md)
+9. **Asincronía**
+   1. [Callbacks y código asíncrono](./09-asincronia/01-callbacks.md)
+   2. [Promesas](./09-asincronia/02-promesas.md)
+   3. [async / await](./09-asincronia/03-async-await.md)
+   4. [Ejercicios](./09-asincronia/04-ejercicios.md)
+10. **Proyectos**
+    1. [Conversor de monedas](./proyectos/conversor-monedas.md)
 
 > ¿Qué viene después? Consulta el [roadmap de contenido](./docs/product/roadmap.md).
 
@@ -137,7 +142,7 @@ console.log("¡Hola, mundo!"); // => ¡Hola, mundo!
 
 ```text
 .
-├── 01-introduccion … 08-dom/   # Módulos del curso (lecciones .md numeradas)
+├── 01-introduccion … 09-asincronia/  # Módulos del curso (lecciones .md numeradas)
 ├── proyectos/                  # Proyectos prácticos
 ├── docs/                       # Cómo se construye y mantiene el curso
 ├── specs/                      # Plantillas para planear contenido nuevo

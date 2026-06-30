@@ -7,6 +7,11 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+### Added
+
+- Módulo **09 · Asincronía**: lecciones de callbacks, promesas y `async`/`await`, con
+  ejercicios y ejemplos verificados con Node.
+
 ## [0.2.0] - 2026-06-30
 
 ### Added
