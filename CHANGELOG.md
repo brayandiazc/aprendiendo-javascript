@@ -7,6 +7,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-06-30
+
 ### Added
 
 - Documentación de proceso en [`docs/`](docs/README.md): estructura del contenido,
@@ -47,6 +49,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 <!--
 Enlaces de comparación entre versiones (ajusta a tu repositorio):
-[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/brayandiazc/aprendiendo-javascript/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/brayandiazc/aprendiendo-javascript/releases/tag/v0.1.0
 -->
