@@ -19,6 +19,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
   importación dinámica), con archivos `.mjs` de ejemplo ejecutables y ejercicios.
 - Módulo **13 · String, Number y fechas**: métodos de cadenas, números/`Math` y `Date`, con
   ejercicios verificados con Node.
+- Proyecto **Buscador de usuarios**: app que descarga usuarios de una API pública y los
+  filtra por nombre, integrando DOM, `fetch` y manejo de errores.
 - CI: la verificación de sintaxis de ejemplos ahora cubre también archivos `.mjs`.
 
 ## [0.2.0] - 2026-06-30
