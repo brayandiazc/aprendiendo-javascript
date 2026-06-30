@@ -13,6 +13,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
   ejercicios y ejemplos verificados con Node.
 - Módulo **10 · Fetch y APIs**: APIs/JSON y `fetch` (GET, manejo de errores con
   `response.ok`, POST), con ejercicios verificados contra una API pública real.
+- Módulo **11 · Manejo de errores**: `try`/`catch`/`finally`, `throw` y errores propios, y
+  manejo de errores en código asíncrono, con ejercicios verificados con Node.
 
 ## [0.2.0] - 2026-06-30
 

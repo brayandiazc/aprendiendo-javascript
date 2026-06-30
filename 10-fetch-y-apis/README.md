@@ -14,4 +14,4 @@ lo aprendido sobre [asincronía](../09-asincronia/README.md).
 
 ---
 
-[← Asincronía](../09-asincronia/README.md) · [Volver al índice](../README.md)
+[← Asincronía](../09-asincronia/README.md) · [Volver al índice](../README.md) · [Manejo de errores →](../11-manejo-de-errores/README.md)
