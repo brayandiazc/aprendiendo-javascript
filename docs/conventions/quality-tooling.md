@@ -50,8 +50,15 @@ npx prettier --write "**/*.{md,js,mjs}"
 
 ## CI
 
-El workflow [`.github/workflows/ci.yml`](../../.github/workflows/ci.yml) corre markdownlint
-y la revisión de enlaces en cada push/PR. Mantén el contenido verde antes de pedir review.
+El workflow [`.github/workflows/ci.yml`](../../.github/workflows/ci.yml) corre en cada
+push/PR:
+
+- **Markdown lint y enlaces** — markdownlint + revisión de enlaces (lychee).
+- **Sintaxis de ejemplos JS** — `node --check` sobre todos los `.js`/`.mjs`.
+- **Ejecutar soluciones** — ejecuta de verdad las soluciones de `soluciones/` con Node
+  (la de `fetch`, que necesita red, es best-effort).
+
+Mantén el contenido verde antes de pedir review.
 
 ---
 

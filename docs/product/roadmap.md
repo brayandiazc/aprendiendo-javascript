@@ -48,7 +48,11 @@ Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 
 - [x] Versión web navegable del curso (GitHub Pages con docsify).
 - [x] Soluciones a los ejercicios en una carpeta aparte (`soluciones/`).
-- [ ] Tests de los ejemplos en CI (ejecutar, no solo verificar sintaxis).
+- [x] Tests de los ejemplos en CI: el job *Ejecutar soluciones* corre las soluciones con Node.
+
+> El roadmap está al día: el contenido propuesto y las ideas a evaluar están completados.
+> Las nuevas ideas de contenido (Set/Map, closures/`this`, regex, testing, TypeScript…) se
+> añadirán aquí cuando se decidan.
 
 ---
 
