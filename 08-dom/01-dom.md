@@ -1,4 +1,4 @@
-# Dom
+# El DOM (Document Object Model)
 
 El DOM (Document Object Model) es una representación en forma de árbol de la estructura de un documento HTML (o XML). El DOM proporciona una interfaz que permite acceder y manipular los elementos y contenido de un documento web.
 
