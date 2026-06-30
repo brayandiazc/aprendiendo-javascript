@@ -8,6 +8,9 @@ explicaciones claras, ejemplos prácticos y ejercicios al final de cada módulo.
 ![Nivel](https://img.shields.io/badge/nivel-principiante-orange)
 ![Hecho con](https://img.shields.io/badge/hecho%20con-Markdown%20%2B%20JavaScript-yellow)
 
+> 🌐 **Versión web navegable**: <https://brayandiazc.github.io/aprendiendo-javascript/>
+> (también puedes leer todo aquí mismo en GitHub).
+
 ## Tabla de contenidos
 
 - [Descripción](#descripción)
@@ -163,8 +166,10 @@ console.log("¡Hola, mundo!"); // => ¡Hola, mundo!
 .
 ├── 01-introduccion … 13-strings-numeros-fechas/  # Módulos del curso (lecciones .md)
 ├── proyectos/                  # Proyectos prácticos
+├── soluciones/                 # Soluciones ejecutables de los ejercicios
 ├── docs/                       # Cómo se construye y mantiene el curso
 ├── specs/                      # Plantillas para planear contenido nuevo
+├── index.html · _sidebar.md    # Versión web navegable (docsify + GitHub Pages)
 └── .claude/                    # Subagentes y skills de IA del proyecto
 ```
 

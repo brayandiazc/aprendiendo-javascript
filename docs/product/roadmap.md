@@ -46,9 +46,9 @@ Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 
 ## Ideas a evaluar
 
-- Versión web navegable del curso (GitHub Pages).
-- Soluciones a los ejercicios en una carpeta aparte.
-- Tests de los ejemplos en CI.
+- [x] Versión web navegable del curso (GitHub Pages con docsify).
+- [x] Soluciones a los ejercicios en una carpeta aparte (`soluciones/`).
+- [ ] Tests de los ejemplos en CI (ejecutar, no solo verificar sintaxis).
 
 ---
 
