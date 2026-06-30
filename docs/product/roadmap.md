@@ -23,6 +23,7 @@ Módulos publicados:
 | 12 · Módulos ES              | ✅ Completo (export/import, default, dinámico) |
 | 13 · String, Number y fechas | ✅ Completo (métodos de string, Math, Date) |
 | Proyectos · Conversor de monedas | ✅ Completo |
+| Proyectos · Buscador de usuarios (API) | ✅ Completo (DOM + fetch + errores) |
 
 ## Correcciones (completadas en v0.2.0)
 
@@ -41,7 +42,7 @@ Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 - [x] **Manejo de errores** — `try`/`catch`/`finally`, `throw`, errores en asincronía. *(módulo 11)*
 - [x] **Módulos ES** — `import`/`export`, organización de código. *(módulo 12)*
 - [x] **Métodos avanzados de String y Number**, fechas (`Date`). *(módulo 13)*
-- [ ] **Proyectos nuevos** — al menos uno que use DOM + asincronía (p. ej. consumir una API pública).
+- [x] **Proyectos nuevos** — al menos uno que use DOM + asincronía (Buscador de usuarios).
 
 ## Ideas a evaluar
 

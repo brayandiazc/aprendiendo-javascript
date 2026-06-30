@@ -122,6 +122,7 @@ anterior, combina teoría con ejemplos y cierra con ejercicios para practicar.
     4. [Ejercicios](./13-strings-numeros-fechas/04-ejercicios.md)
 14. **Proyectos**
     1. [Conversor de monedas](./proyectos/conversor-monedas.md)
+    2. [Buscador de usuarios (API)](./proyectos/buscador-usuarios.md)
 
 > ¿Qué viene después? Consulta el [roadmap de contenido](./docs/product/roadmap.md).
 
