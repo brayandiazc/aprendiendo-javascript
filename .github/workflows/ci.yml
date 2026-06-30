@@ -14,7 +14,7 @@ jobs:
     name: Markdown lint y enlaces
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v19
@@ -31,7 +31,7 @@ jobs:
     name: Sintaxis de ejemplos JS
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
