@@ -11,6 +11,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 - Módulo **09 · Asincronía**: lecciones de callbacks, promesas y `async`/`await`, con
   ejercicios y ejemplos verificados con Node.
+- Módulo **10 · Fetch y APIs**: APIs/JSON y `fetch` (GET, manejo de errores con
+  `response.ok`, POST), con ejercicios verificados contra una API pública real.
 
 ## [0.2.0] - 2026-06-30
 

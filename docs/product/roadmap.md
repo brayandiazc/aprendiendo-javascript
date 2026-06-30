@@ -18,6 +18,7 @@ Módulos publicados:
 | 07 · POO                     | 🚧 Falta el archivo de ejercicios |
 | 08 · DOM y eventos           | ✅ Completo |
 | 09 · Asincronía              | ✅ Completo (callbacks, promesas, async/await) |
+| 10 · Fetch y APIs            | ✅ Completo (APIs, JSON, fetch, POST) |
 | Proyectos · Conversor de monedas | ✅ Completo |
 
 ## Correcciones pendientes (prioridad alta)
@@ -33,7 +34,7 @@ Módulos publicados:
 Temas que un curso de JavaScript moderno debería cubrir y que aún no están:
 
 - [x] **Asincronía** — callbacks, Promises, `async`/`await`. *(módulo 09)*
-- [ ] **Fetch y APIs** — consumir datos con `fetch`, JSON, manejo de respuestas.
+- [x] **Fetch y APIs** — consumir datos con `fetch`, JSON, manejo de respuestas. *(módulo 10)*
 - [ ] **Manejo de errores** — `try`/`catch`/`finally`, `throw`, errores en asincronía.
 - [ ] **Módulos ES** — `import`/`export`, organización de código.
 - [ ] **Métodos avanzados de String y Number**, fechas (`Date`).
