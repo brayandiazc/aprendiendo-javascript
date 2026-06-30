@@ -15,6 +15,9 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
   `response.ok`, POST), con ejercicios verificados contra una API pública real.
 - Módulo **11 · Manejo de errores**: `try`/`catch`/`finally`, `throw` y errores propios, y
   manejo de errores en código asíncrono, con ejercicios verificados con Node.
+- Módulo **12 · Módulos ES**: `export`/`import` (con nombre, por defecto, `as`, `* as`,
+  importación dinámica), con archivos `.mjs` de ejemplo ejecutables y ejercicios.
+- CI: la verificación de sintaxis de ejemplos ahora cubre también archivos `.mjs`.
 
 ## [0.2.0] - 2026-06-30
 
