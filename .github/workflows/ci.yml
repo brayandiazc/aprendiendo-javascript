@@ -24,10 +24,9 @@ jobs:
       - name: Revisar enlaces
         uses: lycheeverse/lychee-action@v2
         with:
-          # Excluimos _sidebar.md (navegación de docsify con enlaces raíz-relativos
-          # que lychee no resuelve) y la propia URL de GitHub Pages (chequeo circular
-          # e intermitente durante los redespliegues).
-          args: "--no-progress --exclude-path ./_sidebar.md --exclude brayandiazc.github.io './**/*.md'"
+          # Las exclusiones (_sidebar.md y la URL de Pages) están en lychee.toml,
+          # que lychee detecta automáticamente en la raíz del repo.
+          args: "--no-progress './**/*.md'"
           fail: true
 
   ejemplos:
