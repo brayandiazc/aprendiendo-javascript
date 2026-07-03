@@ -5,14 +5,53 @@
     <title>Aprendiendo JavaScript</title>
     <meta name="description" content="Guía completa y amigable para aprender JavaScript desde cero y en español." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="theme-color" content="#fdfdfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#212737" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%23212737'/><rect y='0' width='16' height='2' fill='%23ff6b01'/><rect x='3' y='6' width='10' height='2' rx='1' fill='%23eaedf3'/><rect x='3' y='10' width='6' height='2' rx='1' fill='%23ff6b01'/></svg>"
+    />
+    <!-- Aplica el tema guardado antes del primer render para evitar parpadeo. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("aj-theme");
+          if (saved === "light" || saved === "dark") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
-    <style>
-      :root { --theme-color: #f0db4f; }
-      .app-name-link img, .sidebar .app-name { color: #323330; }
-    </style>
+    <link rel="stylesheet" href="assets/theme.css" />
   </head>
   <body>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
     <div id="app">Cargando…</div>
+    <script>
+      // Toggle de tema claro/oscuro, persistido en localStorage.
+      (function () {
+        var btn = document.getElementById("theme-toggle");
+        function current() {
+          var explicit = document.documentElement.getAttribute("data-theme");
+          if (explicit) return explicit;
+          return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        btn.addEventListener("click", function () {
+          var next = current() === "dark" ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", next);
+          try {
+            localStorage.setItem("aj-theme", next);
+          } catch (e) {}
+        });
+      })();
+    </script>
     <script>
       window.$docsify = {
         name: "Aprendiendo JavaScript",
