@@ -1,0 +1,430 @@
+/*
+ * Tema de "Aprendiendo JavaScript" para Docsify.
+ *
+ * Adopta el estilo gráfico de brayandiazc.com (reutilizado en
+ * social-banner-template): tokens de color claro/oscuro, tipografía
+ * monoespaciada "Google Sans Code" y detalles de firma (prefijo "// ",
+ * enlaces con subrayado punteado, bordes redondeados sutiles).
+ *
+ * Se carga DESPUÉS de vue.css para sobreescribir su paleta y tipografía.
+ * El acento se enruta a la variable `--theme-color` de Docsify para que
+ * los estilos de acento del tema Vue sigan la marca automáticamente.
+ */
+
+/* — Tokens de diseño (fuente: brayandiazc.com/src/styles/theme.css) — */
+:root,
+html[data-theme="light"] {
+  --background: #fdfdfd;
+  --foreground: #282728;
+  --accent: #006cac;
+  --accent-foreground: #ffffff;
+  --muted: #e6e6e6;
+  --muted-foreground: #6b7280;
+  --border: #ece9e9;
+
+  --font-app: "Google Sans Code", ui-monospace, "SF Mono", Menlo, Consolas,
+    monospace;
+
+  /* Enruta el acento de la marca al sistema de temas de Docsify. */
+  --theme-color: var(--accent);
+}
+
+/* Tema oscuro por preferencia del sistema — solo cuando no hay un tema
+   elegido explícitamente (el toggle escribe html[data-theme] y siempre gana). */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --background: #212737;
+    --foreground: #eaedf3;
+    --accent: #ff6b01;
+    --muted: #343f60;
+    --muted-foreground: #afb9ca;
+    --border: #4a5578;
+  }
+}
+
+html[data-theme="dark"] {
+  --background: #212737;
+  --foreground: #eaedf3;
+  --accent: #ff6b01;
+  --muted: #343f60;
+  --muted-foreground: #afb9ca;
+  --border: #4a5578;
+}
+
+/* — Base — */
+body {
+  font-family: var(--font-app);
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/* — Barra lateral — */
+.sidebar {
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  color: var(--foreground);
+  font-family: var(--font-app);
+}
+
+.sidebar .app-name-link {
+  color: var(--foreground);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Prefijo "// " de la marca, en color de acento. */
+.sidebar .app-name-link::before {
+  content: "// ";
+  color: var(--accent);
+}
+
+.sidebar ul li a {
+  color: var(--muted-foreground);
+  border: none;
+  transition: color 0.15s ease;
+}
+
+.sidebar ul li a:hover {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.sidebar ul li.active > a,
+.sidebar ul li a.active {
+  color: var(--accent);
+  font-weight: 600;
+  border-right: 2px solid var(--accent);
+}
+
+.sidebar ul li ul {
+  border-left: 1px solid var(--border);
+  margin-left: 0.5rem;
+}
+
+/* — Botón de menú (móvil) — */
+.sidebar-toggle {
+  background: color-mix(in srgb, var(--background) 85%, transparent);
+}
+
+.sidebar-toggle .sidebar-toggle-button:hover {
+  opacity: 1;
+}
+
+.sidebar-toggle span {
+  background-color: var(--accent);
+}
+
+/* — Contenido — */
+.markdown-section {
+  color: var(--foreground);
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  color: var(--foreground);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.markdown-section h1 {
+  font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.markdown-section h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3em;
+}
+
+.markdown-section a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+}
+
+.markdown-section a:hover {
+  text-decoration-style: solid;
+}
+
+.markdown-section strong {
+  color: var(--foreground);
+}
+
+.markdown-section p,
+.markdown-section li,
+.markdown-section td,
+.markdown-section th {
+  color: var(--foreground);
+}
+
+/* Marcadores de lista en acento. */
+.markdown-section ul li::marker,
+.markdown-section ol li::marker {
+  color: var(--accent);
+}
+
+/* — Citas — */
+.markdown-section blockquote {
+  border-left: 4px solid color-mix(in srgb, var(--accent) 80%, transparent);
+  background: color-mix(in srgb, var(--muted) 35%, var(--background));
+  color: var(--foreground);
+  border-radius: 0 8px 8px 0;
+}
+
+.markdown-section blockquote p {
+  color: var(--foreground);
+  opacity: 0.9;
+}
+
+/* — Tablas — */
+.markdown-section table {
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+}
+
+.markdown-section tr {
+  border-top: 1px solid var(--border);
+  background: transparent;
+}
+
+.markdown-section th,
+.markdown-section td {
+  border: 1px solid var(--border);
+}
+
+.markdown-section thead th {
+  background: color-mix(in srgb, var(--muted) 40%, var(--background));
+  color: var(--foreground);
+}
+
+/* — Reglas horizontales — */
+.markdown-section hr {
+  border-bottom: 1px solid var(--border);
+}
+
+/* — Código en línea — */
+.markdown-section code {
+  background: var(--muted);
+  color: var(--foreground);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-family: var(--font-app);
+  font-size: 0.9em;
+}
+
+/* — Bloques de código — */
+.markdown-section pre {
+  background: color-mix(in srgb, var(--muted) 45%, var(--background));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: var(--font-app);
+}
+
+.markdown-section pre::after {
+  color: var(--muted-foreground);
+  opacity: 0.7;
+}
+
+.markdown-section pre > code {
+  background: transparent;
+  color: var(--foreground);
+  font-size: 0.88em;
+  line-height: 1.6;
+}
+
+/* Tokens de Prism para el tema oscuro (los del tema claro por defecto
+   ya contrastan bien sobre el fondo claro). */
+html[data-theme="dark"] .token.comment,
+html[data-theme="dark"] .token.prolog,
+html[data-theme="dark"] .token.doctype,
+html[data-theme="dark"] .token.cdata {
+  color: #8a91a8;
+}
+html[data-theme="dark"] .token.punctuation {
+  color: #afb9ca;
+}
+html[data-theme="dark"] .token.keyword,
+html[data-theme="dark"] .token.boolean,
+html[data-theme="dark"] .token.selector,
+html[data-theme="dark"] .token.important,
+html[data-theme="dark"] .token.atrule {
+  color: #ff9e64;
+}
+html[data-theme="dark"] .token.string,
+html[data-theme="dark"] .token.char,
+html[data-theme="dark"] .token.attr-value,
+html[data-theme="dark"] .token.regex {
+  color: #9ece6a;
+}
+html[data-theme="dark"] .token.function,
+html[data-theme="dark"] .token.class-name {
+  color: #7aa2f7;
+}
+html[data-theme="dark"] .token.number,
+html[data-theme="dark"] .token.constant,
+html[data-theme="dark"] .token.symbol {
+  color: #e0af68;
+}
+html[data-theme="dark"] .token.operator,
+html[data-theme="dark"] .token.entity,
+html[data-theme="dark"] .token.url {
+  color: #afb9ca;
+}
+html[data-theme="dark"] .token.property,
+html[data-theme="dark"] .token.tag,
+html[data-theme="dark"] .token.attr-name {
+  color: #7dcfff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .token.comment,
+  html:not([data-theme]) .token.prolog,
+  html:not([data-theme]) .token.doctype,
+  html:not([data-theme]) .token.cdata {
+    color: #8a91a8;
+  }
+  html:not([data-theme]) .token.punctuation {
+    color: #afb9ca;
+  }
+  html:not([data-theme]) .token.keyword,
+  html:not([data-theme]) .token.boolean,
+  html:not([data-theme]) .token.selector,
+  html:not([data-theme]) .token.important,
+  html:not([data-theme]) .token.atrule {
+    color: #ff9e64;
+  }
+  html:not([data-theme]) .token.string,
+  html:not([data-theme]) .token.char,
+  html:not([data-theme]) .token.attr-value,
+  html:not([data-theme]) .token.regex {
+    color: #9ece6a;
+  }
+  html:not([data-theme]) .token.function,
+  html:not([data-theme]) .token.class-name {
+    color: #7aa2f7;
+  }
+  html:not([data-theme]) .token.number,
+  html:not([data-theme]) .token.constant,
+  html:not([data-theme]) .token.symbol {
+    color: #e0af68;
+  }
+  html:not([data-theme]) .token.operator,
+  html:not([data-theme]) .token.entity,
+  html:not([data-theme]) .token.url {
+    color: #afb9ca;
+  }
+  html:not([data-theme]) .token.property,
+  html:not([data-theme]) .token.tag,
+  html:not([data-theme]) .token.attr-name {
+    color: #7dcfff;
+  }
+}
+
+/* — Buscador — */
+.search {
+  border-bottom: 1px solid var(--border);
+}
+
+.search .input-wrap {
+  background: color-mix(in srgb, var(--muted) 35%, var(--background));
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.search .input-wrap input {
+  background: transparent;
+  color: var(--foreground);
+  font-family: var(--font-app);
+}
+
+.search .input-wrap input::placeholder {
+  color: var(--muted-foreground);
+}
+
+.search p.empty {
+  color: var(--muted-foreground);
+}
+
+.search .matching-post {
+  border-bottom: 1px solid var(--border);
+}
+
+.search .matching-post h2,
+.search .matching-post p {
+  color: var(--foreground);
+}
+
+.search a:hover {
+  color: var(--accent);
+}
+
+/* — Barra de navegación superior (si se usa) — */
+.app-nav a {
+  color: var(--muted-foreground);
+}
+
+.app-nav a:hover {
+  color: var(--accent);
+}
+
+/* — Toggle de tema (claro/oscuro), fijo en la esquina — */
+.theme-toggle {
+  position: fixed;
+  top: 0.85rem;
+  right: 0.9rem;
+  z-index: 40;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--background) 88%, transparent);
+  color: var(--foreground);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* — Barra de desplazamiento — */
+* {
+  scrollbar-color: var(--border) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
