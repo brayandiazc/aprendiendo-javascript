@@ -12,7 +12,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - El sitio Docsify adopta el estilo gráfico de [brayandiazc.com](https://brayandiazc.com)
   (reutilizado en `social-banner-template`): tokens de color claro/oscuro, tipografía
   monoespaciada _Google Sans Code_, acento de marca (azul en claro, naranja en oscuro) y
-  detalles de firma (prefijo `// ` en la marca, enlaces con subrayado punteado). Nueva hoja
+  detalles de firma (prefijo `//` en la marca, enlaces con subrayado punteado). Nueva hoja
   `assets/theme.css` que sobreescribe el tema Vue, más un toggle de tema claro/oscuro
   persistido y respeto por `prefers-color-scheme`.
 
